@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Budugu Company Limited</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #0077cc;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-style: italic;
+    }
+    nav {
+      background: #005fa3;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #004080;
+    }
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 20px 80px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #0077cc;
+      border-bottom: 2px solid #0077cc;
+      padding-bottom: 5px;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    ul li {
+      background: #e0f0ff;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+    form {
+      background: #e0f0ff;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 500px;
+    }
+    form label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+      box-sizing: border-box;
+      resize: vertical;
+    }
+    form button {
+      background: #0077cc;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    form button:hover {
+      background: #005fa3;
+    }
+    footer {
+      background: #0077cc;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+      footer {
+        position: static;
+      }
+      main {
+        padding-bottom: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Budugu Company Limited</h1>
+    <p>Your Trusted Partner in Home & Office Solutions</p>
+  </header>
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <main>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        Budugu Company Limited, located in Mwenge Bamaga, Dar es Salaam, is committed to delivering
+        quality products and professional services to meet your home and office needs. We offer
+        reliable and affordable solutions tailored just for you.
+      </p>
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80" alt="Office workspace" />
+    </section>
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Supply of Home Appliances</li>
+        <li>Cleaning Services</li>
+        <li>Supply of Office Furniture</li>
+        <li>Electrical Fence Installation</li>
+        <li>CCTV Camera Installation</li>
+        <li>Air Conditioning Installation & Maintenance</li>
+        <li>Residential Property Rentals</li>
+      </ul>
+      <img src="https://images.unsplash.com/photo-1581092795365-3ff4d7a7c4f3?auto=format&fit=crop&w=900&q=80" alt="Home appliances" />
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p><strong>Location:</strong> Mwenge Bamaga, Dar es Salaam</p>
+      <p><strong>Phone:</strong> +255 686 857 791</p>
+      <p><strong>Email:</strong> info@budugucompany.co.tz</p>
+
+      <h3>Send us a message</h3>
+      <form action="https://formspree.io/f/xayzjnwl" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="_replyto" placeholder="Your email address" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Budugu Company Limited. All rights reserved.
+  </footer>
+</body>
+</html>
